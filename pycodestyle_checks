@@ -2,4 +2,32 @@
 # checks all .py files in this directory and all it's sub-directories to determine if they meet pycodestyle requirements.
 # Output is only printed for files that fail
 
+def calculate_sum(numbers):
+    """
+    Calculate the sum of a list of numbers.
+
+    Args:
+        numbers (list): A list of numbers.
+
+    Returns:
+        int: The sum of the numbers.
+    """
+    total_sum = 0
+    for num in numbers:
+        total_sum += num
+    return total_sum
+
+
+def main():
+    """
+    Main function to demonstrate the calculate_sum function.
+    """
+    numbers = [1, 2, 3, 4, 5]
+    result = calculate_sum(numbers)
+    print(f"The sum of {numbers} is: {result}")
+
+
+if __name__ == '__main__':
+    main()
+
 find . -name "*.py" -type f -print0  | xargs -0 pycodestyle

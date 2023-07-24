@@ -6,3 +6,10 @@ Header {
     border-bottom: 1px;
     border-color:  #CCCCCC;
  }
+ .logo {
+    margin-left: 20px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}

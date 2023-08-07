@@ -111,5 +111,5 @@ models/review.py: Review class that inherits from BaseModel
 
 
 ##AUTHORS:
-Gloria Nwaigba <glorianwaigba@gmail.com>
-Kate Onyebuchi <iamkatty3@gmail.com>
+- Gloria Nwaigba <glorianwaigba@gmail.com>
+- Kate Onyebuchi <iamkatty3@gmail.com>

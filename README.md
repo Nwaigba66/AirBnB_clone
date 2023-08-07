@@ -111,5 +111,9 @@ models/review.py: Review class that inherits from BaseModel
 
 
 ##AUTHORS:
+This file leads all contributors to the repository.
+
 - Gloria Nwaigba <glorianwaigba@gmail.com>
 - Kate Onyebuchi <iamkatty3@gmail.com>
+
+

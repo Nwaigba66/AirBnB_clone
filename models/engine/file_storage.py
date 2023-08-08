@@ -21,17 +21,17 @@ class FileStorage():
         objects = {}
         for k, v in FileStorage.__objects.items():
             objects[k] = v.to_dict()
-            with open(FileStorage.__file_path, "W") as f:
+            with open(FileStorage.__file_path, "w") as f:
                 f.write(json.dumps(objects))
 
     """ reloads dictionary from a json file """
     def reload(self):
-        dct = {'BaseModel': BaseModel}
+        dct = {'BaseModel': models.BaseModel}
         try:
             with open(FileStorage.__file_path, "r") as f:
                 dic = json.loads(f.read())
                 for k, v in dic.items():
-                    obj = dct[value["__class__"]](**v)
+                    obj = dct[v["__class__"]](**v)
                     FileStorage.__objects[k] = obj
         except FileNotFoundError:
             pass
